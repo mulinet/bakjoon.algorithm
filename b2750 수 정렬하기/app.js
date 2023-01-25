@@ -13,7 +13,7 @@ const solutionASC = (array) => {
     for (let i = 0; i < array.length - 1; i++){
         minIndex = i;
         for (let j = i + 1; j < array.length; j++) {
-            if (array[j] < array[minIndex]){
+            if (array[j] > array[minIndex]){
                 minIndex = j;
             }
         }
@@ -30,12 +30,12 @@ solutionASC(excludeDupArray);
 /* ---------------------------------
 백준 맞았습니다.
 ---------------------------------*/
-let arr = input.slice(1, input.length);
-arr.sort((a, b) => a - b);
+// let arr = input.slice(1, input.length);
+// arr.sort((a, b) => a - b);
 
-for (let i = 0; i < arr.length; i++) {
-	console.log(arr[i]);
-}
+// for (let i = 0; i < arr.length; i++) {
+// 	console.log(arr[i]);
+// }
 
 
 
